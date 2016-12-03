@@ -25,8 +25,15 @@ class WatchViewController: UIViewController {
         setProgressBar()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        player.seek(to: kCMTimeZero)
+        player.play()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        player.pause()
         player.removeObserver(self, forKeyPath: "status")
     }
     
