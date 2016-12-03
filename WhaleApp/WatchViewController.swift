@@ -16,16 +16,26 @@ class WatchViewController: UIViewController {
     var outputUrls = [URL]()
     var playerLayer = AVPlayerLayer()
     var player = AVPlayer()
+    let progressBar = UIProgressView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         mergeVideos()
+        setProgressBar()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         player.removeObserver(self, forKeyPath: "status")
+    }
+    
+    private func setProgressBar() {
+        let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
+        let yAxis: CGFloat = (navigationController?.navigationBar.bounds.height ?? 0) + statusBarHeight
+        progressBar.frame = CGRect(x: 0, y: yAxis, width: view.bounds.width, height: 15)
+        progressBar.progressTintColor = whaleColor
+        view.addSubview(progressBar)
     }
 
     private func mergeVideos() {
@@ -34,6 +44,11 @@ class WatchViewController: UIViewController {
                 DispatchQueue.main.async {
                     let playerItem = AVPlayerItem(url: filePath)
                     self.player.replaceCurrentItem(with: playerItem)
+                    
+                    self.player.addPeriodicTimeObserver(forInterval: CMTimeMake(Int64(1.0), Int32(60.0)), queue: nil, using: { (time) in
+                        self.updateProgressBar()
+                    })
+                    
                     self.setupVideoLayer()
                 }
             }
@@ -55,6 +70,14 @@ class WatchViewController: UIViewController {
     func playerItemDidReachEnd(notification: Notification) {
         player.seek(to: kCMTimeZero)
         player.play()
+    }
+    
+    func updateProgressBar() {
+        if let currentItem = player.currentItem {
+            let duration = CMTimeGetSeconds(currentItem.duration)
+            let time = CMTimeGetSeconds(player.currentTime())
+            progressBar.progress = Float(time/duration)
+        }
     }
     
     
