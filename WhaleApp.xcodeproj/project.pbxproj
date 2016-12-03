@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		160901791DF343310082EEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160901781DF343310082EEB0 /* AppDelegate.swift */; };
-		1609017B1DF343310082EEB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609017A1DF343310082EEB0 /* ViewController.swift */; };
-		1609017E1DF343310082EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1609017C1DF343310082EEB0 /* Main.storyboard */; };
 		160901801DF343310082EEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1609017F1DF343310082EEB0 /* Assets.xcassets */; };
 		160901831DF343310082EEB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160901811DF343310082EEB0 /* LaunchScreen.storyboard */; };
 		1609018E1DF343320082EEB0 /* WhaleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609018D1DF343320082EEB0 /* WhaleAppTests.swift */; };
+		160901991DF344090082EEB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160901981DF344090082EEB0 /* HomeViewController.swift */; };
+		1609019D1DF34AFE0082EEB0 /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609019C1DF34AFE0082EEB0 /* UIColor+Helpers.swift */; };
+		1609019F1DF34B1F0082EEB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609019E1DF34B1F0082EEB0 /* Constants.swift */; };
+		160901A11DF34B9A0082EEB0 /* ProgressIndicatiorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160901A01DF34B9A0082EEB0 /* ProgressIndicatiorView.swift */; };
+		1627659E1DF35B03007227C4 /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627659D1DF35B03007227C4 /* String+Helpers.swift */; };
+		162765A21DF3630D007227C4 /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162765A11DF3630D007227C4 /* WatchViewController.swift */; };
+		162765A41DF3645F007227C4 /* VideoMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162765A31DF3645F007227C4 /* VideoMerger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +33,19 @@
 /* Begin PBXFileReference section */
 		160901751DF343310082EEB0 /* WhaleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		160901781DF343310082EEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1609017A1DF343310082EEB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1609017D1DF343310082EEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1609017F1DF343310082EEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		160901821DF343310082EEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		160901841DF343310082EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160901891DF343320082EEB0 /* WhaleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhaleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1609018D1DF343320082EEB0 /* WhaleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleAppTests.swift; sourceTree = "<group>"; };
 		1609018F1DF343320082EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160901981DF344090082EEB0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1609019C1DF34AFE0082EEB0 /* UIColor+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		1609019E1DF34B1F0082EEB0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		160901A01DF34B9A0082EEB0 /* ProgressIndicatiorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatiorView.swift; sourceTree = "<group>"; };
+		1627659D1DF35B03007227C4 /* String+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
+		162765A11DF3630D007227C4 /* WatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
+		162765A31DF3645F007227C4 /* VideoMerger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMerger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +87,10 @@
 		160901771DF343310082EEB0 /* WhaleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1609019B1DF34AE30082EEB0 /* Helpers */,
+				1609019A1DF34AD40082EEB0 /* View Controllers */,
+				160901A21DF34C630082EEB0 /* Views */,
 				160901781DF343310082EEB0 /* AppDelegate.swift */,
-				1609017A1DF343310082EEB0 /* ViewController.swift */,
-				1609017C1DF343310082EEB0 /* Main.storyboard */,
 				1609017F1DF343310082EEB0 /* Assets.xcassets */,
 				160901811DF343310082EEB0 /* LaunchScreen.storyboard */,
 				160901841DF343310082EEB0 /* Info.plist */,
@@ -94,6 +105,34 @@
 				1609018F1DF343320082EEB0 /* Info.plist */,
 			);
 			path = WhaleAppTests;
+			sourceTree = "<group>";
+		};
+		1609019A1DF34AD40082EEB0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				160901981DF344090082EEB0 /* HomeViewController.swift */,
+				162765A11DF3630D007227C4 /* WatchViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1609019B1DF34AE30082EEB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				162765A31DF3645F007227C4 /* VideoMerger.swift */,
+				1609019C1DF34AFE0082EEB0 /* UIColor+Helpers.swift */,
+				1609019E1DF34B1F0082EEB0 /* Constants.swift */,
+				1627659D1DF35B03007227C4 /* String+Helpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		160901A21DF34C630082EEB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				160901A01DF34B9A0082EEB0 /* ProgressIndicatiorView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +222,6 @@
 			files = (
 				160901831DF343310082EEB0 /* LaunchScreen.storyboard in Resources */,
 				160901801DF343310082EEB0 /* Assets.xcassets in Resources */,
-				1609017E1DF343310082EEB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +239,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1609017B1DF343310082EEB0 /* ViewController.swift in Sources */,
 				160901791DF343310082EEB0 /* AppDelegate.swift in Sources */,
+				162765A21DF3630D007227C4 /* WatchViewController.swift in Sources */,
+				1609019D1DF34AFE0082EEB0 /* UIColor+Helpers.swift in Sources */,
+				1627659E1DF35B03007227C4 /* String+Helpers.swift in Sources */,
+				160901991DF344090082EEB0 /* HomeViewController.swift in Sources */,
+				162765A41DF3645F007227C4 /* VideoMerger.swift in Sources */,
+				1609019F1DF34B1F0082EEB0 /* Constants.swift in Sources */,
+				160901A11DF34B9A0082EEB0 /* ProgressIndicatiorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +269,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1609017C1DF343310082EEB0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1609017D1DF343310082EEB0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		160901811DF343310082EEB0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +448,7 @@
 				160901941DF343320082EEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		160901951DF343320082EEB0 /* Build configuration list for PBXNativeTarget "WhaleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +457,7 @@
 				160901971DF343320082EEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
